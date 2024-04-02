@@ -1,3 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Nothing+You+Could+Do&display=swap");
+
+.josefin-slab-bold {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.josefin-slab {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 * {
-  background-color: aquamarine;
+  margin: 0;
+  padding: 0;
+  --white: #f1ede2;
+  --dark-sage: #1c1d18;
+  --sage: #797d62;
+  --sage-hover: hsl(69, 12%, 46%);
+  --clay: #e2c5b5;
+}
+
+#name {
+  display: flex;
+  align-items: center;
+  font-family: "Josefin Slab";
+  font-size: 4rem;
+  color: var(--dark-sage);
+}
+
+.logo {
+  width: 150px;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px;
+  align-items: center;
+  background-color: var(--sage);
+  border-bottom: 20px solid var(--clay);
+}
+
+#nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  padding-bottom: 60px;
+  gap: 20px;
+  height: 100px;
+}
+
+#nav > button {
+  flex: 1;
+  color: var(--dark-sage);
+  background-color: var(--sage);
+  width: 80px;
+  border: none;
+  font-family: "Josefin Slab";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  transition: ease-in-out 200ms;
+}
+
+#nav > button:hover {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+#content {
+  height: 100vh;
+  background-color: var(--white);
 }
