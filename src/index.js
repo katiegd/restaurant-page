@@ -1,5 +1,8 @@
 import "./style.css";
+import juniper from "./assets/juniper.svg";
 
+const juniperLogo = document.querySelector("#logo");
+juniperLogo.src = juniper;
 const homeBtn = document.querySelector("#home");
 const menuBtn = document.querySelector("#menu");
 const aboutBtn = document.querySelector("#about");

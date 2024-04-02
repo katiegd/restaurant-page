@@ -32,8 +32,9 @@
   color: var(--dark-sage);
 }
 
-.logo {
-  width: 150px;
+#logo {
+  width: 100px;
+  height: 100px;
 }
 
 #header {

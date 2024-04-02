@@ -7,13 +7,43 @@ module.exports = {
     bundle: path.resolve(__dirname, "src/index.js"),
   },
   output: {
-    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
+    filename: "[name][contenthash].js",
     clean: true,
+    assetModuleFilename: "[name][ext]",
   },
-  devtool: "inline-source-map",
+  devtool: "source-map",
   devServer: {
-    static: "./dist",
+    static: {
+      directory: path.resolve(__dirname, "dist"),
+    },
+    port: 3000,
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        type: "asset/resource",
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -22,21 +52,7 @@ module.exports = {
       inject: "body",
     }),
   ],
-  module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.svg$/,
-        use: "file-loader",
-      },
-      {
-        test: /\.(png|jpg|jpeg|gif)$/i,
-        loader: "file-loader",
-        type: "asset/resource",
-      },
-    ],
+  optimization: {
+    runtimeChunk: "single",
   },
 };
