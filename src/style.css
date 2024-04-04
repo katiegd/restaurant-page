@@ -8,9 +8,7 @@
   font-variation-settings: "width" 100;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+:root {
   --white: #f1ede2;
   --whiteAlpha: rgba(241, 237, 226, 0.2);
   --dark-sage: #1c1d18;
@@ -18,14 +16,17 @@
   --sageAlpha: rgba(121, 125, 98, 0.9);
   --sage-hover: hsl(69, 12%, 46%);
   --clay: #e2c5b5;
-  --custom-opacity: 0.9;
+  --clayAlpha: rgba(226, 197, 181, 0.5);
 }
 
-#hero {
+body {
   background-image: url("./assets/platter.jpg");
+  /* https://pixabay.com/photos/platter-food-starters-meal-feast-2009590/ */
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
 #name {
@@ -48,14 +49,13 @@
   grid-template-rows: 200px;
   align-items: center;
   background-color: var(--sageAlpha);
-  border-bottom: 20px solid var(--clay);
+  border-bottom: 20px solid var(--clayAlpha);
 }
 
 #nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
   height: 100px;
 }
 
@@ -81,23 +81,74 @@
 }
 
 #content {
-  background-color: rgba(186, 186, 186, 0.8);
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  font-family: "Noto Serif Display", serif;
+  color: var(--dark-sage);
+  background-color: rgba(186, 186, 186, 0.9);
   padding: 30px;
 }
 
-#description {
+#home-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-container {
+  grid-area: 1 / 1/ 2 / 2;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#image-id {
+  width: 300px;
+  border-radius: 30px;
+  opacity: 0.9;
+}
+
+#description {
+  grid-area: 1 / 2 / 1 / 3;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
   font-family: "Noto Serif Display", serif;
+  font-size: 1rem;
+  font-weight: 300;
   width: 80%;
-  height: 70vh;
+  height: 50vh;
+  overflow: auto;
 }
 
 #description > h1 {
   font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+#description > h2 {
+  font-size: 1.75rem;
   font-weight: 300;
+  padding-bottom: 20px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+a.reserve {
+  color: var(--dark-sage);
+  text-decoration: none;
+  font-weight: 400;
+  font-style: italic;
+}
+
+a.reserve:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--dark-sage);
 }
