@@ -1,34 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Allison&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Nothing+You+Could+Do&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap");
 
-.josefin-slab-bold {
-  font-family: "Josefin Slab", serif;
+.noto-serif display-<uniquifier > {
+  font-family: "Noto Serif Display", serif;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: <weight>;
   font-style: normal;
-}
-
-.josefin-slab {
-  font-family: "Josefin Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+  font-variation-settings: "width" 100;
 }
 
 * {
   margin: 0;
   padding: 0;
   --white: #f1ede2;
+  --whiteAlpha: rgba(241, 237, 226, 0.2);
   --dark-sage: #1c1d18;
   --sage: #797d62;
+  --sageAlpha: rgba(121, 125, 98, 0.9);
   --sage-hover: hsl(69, 12%, 46%);
   --clay: #e2c5b5;
+  --custom-opacity: 0.9;
+}
+
+#hero {
+  background-image: url("./assets/platter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 #name {
   display: flex;
   align-items: center;
-  font-family: "Josefin Slab";
-  font-size: 4rem;
+  font-family: "Noto Serif Display", serif;
+  font-weight: 300;
+  font-size: 3rem;
   color: var(--dark-sage);
 }
 
@@ -40,17 +45,16 @@
 #header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px;
+  grid-template-rows: 200px;
   align-items: center;
-  background-color: var(--sage);
+  background-color: var(--sageAlpha);
   border-bottom: 20px solid var(--clay);
 }
 
 #nav {
   display: flex;
   justify-content: space-around;
-  align-items: end;
-  padding-bottom: 60px;
+  align-items: center;
   gap: 20px;
   height: 100px;
 }
@@ -58,22 +62,42 @@
 #nav > button {
   flex: 1;
   color: var(--dark-sage);
-  background-color: var(--sage);
-  width: 80px;
+  background-color: transparent;
+  width: auto;
+  height: 100%;
   border: none;
-  font-family: "Josefin Slab";
-  font-weight: 400;
+  font-family: "Noto Serif Display", serif;
+  font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transition: ease-in-out 200ms;
 }
 
 #nav > button:hover {
+  color: var(--clay);
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.25rem;
+  border-bottom: 5px solid var(--clay);
 }
 
 #content {
-  height: 100vh;
-  background-color: var(--white);
+  background-color: rgba(186, 186, 186, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+}
+
+#description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Serif Display", serif;
+  width: 80%;
+  height: 70vh;
+}
+
+#description > h1 {
+  font-size: 3rem;
+  font-weight: 300;
 }

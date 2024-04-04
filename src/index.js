@@ -1,5 +1,6 @@
 import "./style.css";
 import juniper from "./assets/juniper.svg";
+import platter from "./assets/platter.jpg";
 
 const juniperLogo = document.querySelector("#logo");
 juniperLogo.src = juniper;
