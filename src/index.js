@@ -17,6 +17,7 @@ homeBtn.addEventListener("click", () => {
 });
 
 menuBtn.addEventListener("click", () => {
+  clearPage();
   showMenu();
 });
 
