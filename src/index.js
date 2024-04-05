@@ -1,8 +1,10 @@
 import "./style.css";
 import "./menustyle.css";
+import "./about.css";
 import juniper from "./assets/juniper.svg";
 import showMenu from "./menu";
 import loadHome from "./home";
+import showAbout from "./about";
 
 const juniperLogo = document.querySelector("#logo");
 juniperLogo.src = juniper;
@@ -22,10 +24,11 @@ menuBtn.addEventListener("click", () => {
 });
 
 aboutBtn.addEventListener("click", () => {
-  alert("boop! about us!");
+  clearPage();
+  showAbout();
 });
 
 function clearPage() {
   mainDiv.innerHTML = "";
 }
-loadHome();
+showAbout();
