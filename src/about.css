@@ -19,6 +19,7 @@
 #about-description {
   grid-area: 2 / 2 / 3 / 3;
   padding-left: 75px;
+  line-height: 1.6rem;
 }
 
 #chef-thor {
