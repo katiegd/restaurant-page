@@ -40,4 +40,4 @@ function clearPage() {
   mainDiv.innerHTML = "";
 }
 
-showReserve();
+loadHome();

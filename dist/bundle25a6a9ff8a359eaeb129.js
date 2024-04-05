@@ -156,7 +156,7 @@ reserveBtn.addEventListener("click", function () {
 function clearPage() {
   mainDiv.innerHTML = "";
 }
-(0,_reserve__WEBPACK_IMPORTED_MODULE_8__["default"])();
+(0,_home__WEBPACK_IMPORTED_MODULE_6__["default"])();
 
 /***/ }),
 
@@ -1507,4 +1507,4 @@ module.exports = __webpack_require__.p + "platter.jpg";
 /******/ var __webpack_exports__ = (__webpack_exec__("./src/index.js"));
 /******/ }
 ]);
-//# sourceMappingURL=bundle2402a5db47f7ca8d2fe1.js.map
+//# sourceMappingURL=bundle25a6a9ff8a359eaeb129.js.map
