@@ -117,6 +117,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 15px rgba(28, 29, 24, 0.4);
 }
 
 #description {
@@ -134,7 +135,7 @@ body {
 
 #description > h1 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 300;
   padding-bottom: 20px;
 }
 

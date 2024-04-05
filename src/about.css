@@ -1,6 +1,6 @@
 #about-content {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 275px 3fr;
   grid-template-rows: 75px 5fr;
   gap: 10px;
   padding: 0px 80px 80px 80px;
@@ -11,6 +11,11 @@
   padding-left: 75px;
 }
 
+#about-header h1 {
+  font-weight: 400;
+  border-bottom: 4px solid rgba(28, 29, 24, 0.1);
+}
+
 #about-description {
   grid-area: 2 / 2 / 3 / 3;
   padding-left: 75px;
@@ -19,6 +24,7 @@
 #chef-thor {
   border-radius: 30px;
   width: 250px;
+  box-shadow: 2px 2px 15px rgba(28, 29, 24, 0.2);
 }
 
 #image-container {
@@ -26,6 +32,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
   gap: 10px;
 }
 

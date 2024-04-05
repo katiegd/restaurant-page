@@ -1,0 +1,48 @@
+#reserve-content {
+  padding-bottom: 100px;
+}
+
+#reserve-content h1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+#reserve-form {
+  padding: 50px;
+  background-color: var(--whiteAlpha);
+  border-radius: 30px;
+  font-size: 0.8rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  gap: 30px;
+}
+
+#first-name-input,
+#last-name-input {
+  width: auto;
+  height: 20px;
+  border: none;
+  margin-left: 20px;
+}
+
+#number-input,
+#date-input {
+  margin-left: 20px;
+}
+
+#submit-btn {
+  border: none;
+  color: var(--dark-sage);
+  background-color: var(--sage);
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#submit-btn:hover {
+  color: var(--sage);
+  background-color: var(--white);
+  cursor: pointer;
+}
