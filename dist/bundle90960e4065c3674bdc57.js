@@ -446,6 +446,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#about-content {
 #about-description {
   grid-area: 2 / 2 / 3 / 3;
   padding-left: 75px;
+  line-height: 1.6rem;
 }
 
 #chef-thor {
@@ -468,7 +469,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#about-content {
   font-size: 0.75rem;
   font-style: italic;
 }
-`, "",{"version":3,"sources":["webpack://./src/about.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,gCAAgC;EAChC,4BAA4B;EAC5B,SAAS;EACT,2BAA2B;AAC7B;;AAEA;EACE,sBAAsB;EACtB,kBAAkB;AACpB;;AAEA;EACE,gBAAgB;EAChB,8CAA8C;AAChD;;AAEA;EACE,wBAAwB;EACxB,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,YAAY;EACZ,8CAA8C;AAChD;;AAEA;EACE,wBAAwB;EACxB,aAAa;EACb,mBAAmB;EACnB,eAAe;EACf,uBAAuB;EACvB,yBAAyB;EACzB,SAAS;AACX;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;AACpB","sourcesContent":["#about-content {\n  display: grid;\n  grid-template-columns: 275px 3fr;\n  grid-template-rows: 75px 5fr;\n  gap: 10px;\n  padding: 0px 80px 80px 80px;\n}\n\n#about-header {\n  grid-area: 1 / 2/ 2/ 3;\n  padding-left: 75px;\n}\n\n#about-header h1 {\n  font-weight: 400;\n  border-bottom: 4px solid rgba(28, 29, 24, 0.1);\n}\n\n#about-description {\n  grid-area: 2 / 2 / 3 / 3;\n  padding-left: 75px;\n}\n\n#chef-thor {\n  border-radius: 30px;\n  width: 250px;\n  box-shadow: 2px 2px 15px rgba(28, 29, 24, 0.2);\n}\n\n#image-container {\n  grid-area: 2 / 1 / 3 / 2;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-content: flex-start;\n  gap: 10px;\n}\n\n#caption {\n  font-size: 0.75rem;\n  font-style: italic;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/about.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,gCAAgC;EAChC,4BAA4B;EAC5B,SAAS;EACT,2BAA2B;AAC7B;;AAEA;EACE,sBAAsB;EACtB,kBAAkB;AACpB;;AAEA;EACE,gBAAgB;EAChB,8CAA8C;AAChD;;AAEA;EACE,wBAAwB;EACxB,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,YAAY;EACZ,8CAA8C;AAChD;;AAEA;EACE,wBAAwB;EACxB,aAAa;EACb,mBAAmB;EACnB,eAAe;EACf,uBAAuB;EACvB,yBAAyB;EACzB,SAAS;AACX;;AAEA;EACE,kBAAkB;EAClB,kBAAkB;AACpB","sourcesContent":["#about-content {\n  display: grid;\n  grid-template-columns: 275px 3fr;\n  grid-template-rows: 75px 5fr;\n  gap: 10px;\n  padding: 0px 80px 80px 80px;\n}\n\n#about-header {\n  grid-area: 1 / 2/ 2/ 3;\n  padding-left: 75px;\n}\n\n#about-header h1 {\n  font-weight: 400;\n  border-bottom: 4px solid rgba(28, 29, 24, 0.1);\n}\n\n#about-description {\n  grid-area: 2 / 2 / 3 / 3;\n  padding-left: 75px;\n  line-height: 1.6rem;\n}\n\n#chef-thor {\n  border-radius: 30px;\n  width: 250px;\n  box-shadow: 2px 2px 15px rgba(28, 29, 24, 0.2);\n}\n\n#image-container {\n  grid-area: 2 / 1 / 3 / 2;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-content: flex-start;\n  gap: 10px;\n}\n\n#caption {\n  font-size: 0.75rem;\n  font-style: italic;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1507,4 +1508,4 @@ module.exports = __webpack_require__.p + "platter.jpg";
 /******/ var __webpack_exports__ = (__webpack_exec__("./src/index.js"));
 /******/ }
 ]);
-//# sourceMappingURL=bundle25a6a9ff8a359eaeb129.js.map
+//# sourceMappingURL=bundle90960e4065c3674bdc57.js.map
